@@ -20,6 +20,17 @@ return array(
                     ),
                 ),
             ),
+            'artist' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route'    => '/artist/:mbid',
+
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'artist',
+                    ),
+                ),
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
